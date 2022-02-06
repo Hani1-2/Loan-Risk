@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- magnific popup css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+
+    <!-- font awesome file link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- bootstrap file link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/22d89fdb65.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css file link  -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/main.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/style.css')}}"
+    />
+      <style>
+      #booking {
+        min-height: 60vh;
+        background-image: url("../static/Images/bg.jfif");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+    <title>Customer Verification</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header fixed-top">
+      <a href="/" class="logo"
+        ><img
+          src="{{url_for('static', filename='Images/logo.png')}}"
+          height="20%"
+      /></a>
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/home">Form</a></li>
+        </ul>
+      </nav>
+
+      <div class="fas fa-bars"></div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <form method="POST" , action="{{url_for('predict')}}">
+                <div class="form-group"></div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">GENDER</span>
+                      <select class="form-control" name="a">
+                        Select any option
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Are you married?</span>
+                      <select class="form-control" name="b">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Number of Dependents</span>
+                      <select class="form-control" name="c">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3+</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Education</span>
+                      <select class="form-control" name="d">
+                        <option value="Graduate">Graduate</option>
+                        <option value="Non Graduate">Not Graduate</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">Are you Self-Employed?</span>
+                      <select class="form-control" name="e">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                    </div>
+                  </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Income</span>
+                        <input
+                          type="text"
+                          placeholder="your income in digits"
+                          name="f"
+                          class="form-control"
+                          required
+                        />
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Income co-applicant?</span>
+                        <input
+                          type="text"
+                          placeholder="Enter your co-applicant income"
+                          name="g"
+                          required
+                          class="form-control"
+                        />
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">LOAN AMOUNT</span>
+                        <input
+                          type="text"
+                          placeholder="Enter your loan amount"
+                          name="h"
+                          class="form-control"
+                          required
+                        />
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Term for borrowing money (weeks)</span>
+                        <input
+                          type="text"
+                          placeholder="Enter your loan amount term"
+                          name="i"
+                          required
+                          class="form-control"
+                        />
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Applicants credit history</span>
+                        <select class="form-control" name ="j">Select any option
+                          <option value="1">Clear
+                          </option>
+                          <option value="2">Not Clear
+                          </option> 
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-btn">
+                        <button class="submit-btn">LOAN APPROVAL?</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section ends -->
+
+    <!-- jquery file link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- main/custom javascript file link  -->
+    <script src="./static/js/main.js"></script>
+  </body>
+</html>

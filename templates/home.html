@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servay Form</title>
+  <style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: url(static/Images/main.gif);
+    background-position: left;
+    background-size: cover;
+    font-size: large;
+    /* font-family: "Poppins", sans-serif; */
+    margin-top: 40px;
+  }
+  .h4{
+    font-size: x-large;
+  }
+  .heading{
+    width: 500px;
+    background-color: rgb(206, 129, 85)1;
+    margin: auto;
+    color: #423434;
+    padding: 10px 0px 10px 0px;
+    text-align:center;
+    font-size: xx-large;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .mane{
+    background-color: rgb(165, 144, 144)1;
+    width: 500px;
+    margin: auto;
+  }
+  form{
+    padding: 10px;
+  }
+  /* #q1{
+    width: 100%;
+    height: 100px;
+  } */
+  .option option{
+    font-size: 14px;
+  }
+  .predict{
+    background-color: rgb(255, 250, 250);
+    display: block;
+    margin: 12px 0px 0px 12px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #050505;
+    padding: 14px 80px;
+    outline: none;
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    transition: 0.25px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+      .heading{
+    font-size: x-large;
+  }
+    .heading{
+    width: 80%;
+    height: 100%;
+  }
+    .mane{
+    width: 80%;
+    height: 100%;
+  }
+  
+}
+  </style>
+</head>
+<center>
+<body>
+<div style = "color:#0c0c0c">
+  <div class="heading"><h1> Loan Approval System</h1></div><br>
+  <!-- , action="{{url_for('home')}}" -->
+<div class="mane">
+  <form method="POST", action="{{url_for('predict')}}">
+      <br>
+     <div id="q3"><h4 class="h4">Gender<h4><br> 
+      <select class="clean" name="a">Select any option
+        <option value="1">Male
+        </option>
+        <option value="2">Female
+        </option>
+      </select></div><br>
+     <div id="q4"><h4 class="h4">Are you married?<h4><br>
+    <select class="call" name ="b">
+      <option value ="Yes">Yes</option>
+      <option value ="No">No</option>
+    </select></div>
+    <br>
+    <div id="q5" class="h4"><h4>Number of Dependents<br><h4>
+      <br>
+    <select class="call" name ="c">
+      <option value ="0">0</option>
+      <option value ="1">1</option>
+      <option value ="2">2</option>
+      <option value ="3">3+</option>
+    </select></div><br>
+    <div id="q6"><h4 class="h4">Education<h4><br>
+    <select class = "edu" name ="d">
+      <option value ="Graduate">Graduate</option>
+      <option value ="Non Graduate">Not Graduate</option>
+    </select></div><br>
+    <div id="q7"><h4 class="h4">Are you Self-Employed?<h4><br>
+    <select class="employe" name ="e">
+      <option value ="Yes">Yes</option>
+      <option value ="No">No</option>
+    </select>
+  </div><br>
+    <div id="q8"><h4 class="h4">Income<h4><br>
+            <input
+          type="text"
+          placeholder="your income in digits"
+          name="f"
+          required
+        /></div><br>
+     <div id="q9"><h4 class="h4">Income co-applicant?<h4><br>
+                  <input
+          type="text"
+          placeholder="Enter your co-applicant income"
+          name="g"
+          required
+        /></div><br>
+     <div id="q10"><h4 class="h4">Loan amount<h4><br>
+      <input
+          type="text"
+          placeholder="Enter your loan amount"
+          name="h"
+          required
+        />
+        <br><br></div>
+    <div id="q11"><h4 class="h4">Term for borrowing money (weeks)<h4><br>
+      <input
+          type="text"
+          placeholder="Enter your loan amount term"
+          name="i"
+          required
+        /><br></div><br>
+    <div id="q12"><h4 class="h4">Applicants credit history<h4><br>
+    <select class="ach" name ="j">Select any option
+        <option value="1">Clear
+        </option>
+        <option value="2">Not Clear
+        </option> 
+    </select><br><br></div>
+            <center><input class="predict" type="submit" , value='predict!'></center><br><br>
+    </form>
+    </div>
+</body>
+</center>
+</html>

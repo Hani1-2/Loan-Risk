@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Approval</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- bootstrap file link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/22d89fdb65.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css file link  -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/main.css')}}"
+    />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .size {
+        width: 700px;
+        height: 500px;
+      }
+      @media (max-width: 768px) {
+        .size {
+          width: 350px;
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header fixed-top">
+      <a href="/" class="logo"
+        ><img
+          src="{{url_for('static', filename='Images/logo.png')}}"
+          height="20%"
+      /></a>
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/home">Form</a></li>
+        </ul>
+      </nav>
+
+      <div class="fas fa-bars"></div>
+    </header>
+    <center>
+      {% if data == 1 %}
+      <img
+        class="size"
+        src="{{url_for('static', filename='Images/approved.gif')}}"
+      /><br />
+      <h1>
+        Congratulations! You will be contacted soon. Make your all documents
+        ready
+      </h1>
+
+      {% else %}
+      <img
+        class="size"
+        src="{{url_for('static', filename='Images/rejected.gif')}}"
+      /><br />
+      <h1>
+        We are extremely sorry, we can not continue with your application please
+        read our criteria for eligibility
+      </h1>
+      {% endif %}
+    </center>
+  </body>
+</html>
