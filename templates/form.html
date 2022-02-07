@@ -40,12 +40,24 @@
       <style>
       #booking {
         min-height: 60vh;
-        background-image: url("../static/Images/bg.jfif");
+        background-image: url("../static/Images/ezgif-frame-027.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: center;
       }
+      .choose::-webkit-file-upload-button {
+  color: white;
+  display: inline-block;
+  background: #4e8594;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 10pt;
+}
     </style>
     <title>Customer Verification</title>
   </head>
@@ -135,7 +147,7 @@
                   </div>
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Income</span>
+                        <span class="form-label">Income ( $ )</span>
                         <input
                           type="text"
                           placeholder="your income in digits"
@@ -148,7 +160,14 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Income co-applicant?</span>
+                        <span class="form-label"><span>      </span> income receipt
+                        </span>
+                        <input class="choose" type="file" id="myfile" name="income">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Co applicant income ( $ )</span>
                         <input
                           type="text"
                           placeholder="Enter your co-applicant income"
@@ -161,7 +180,14 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">LOAN AMOUNT</span>
+                        <span class="form-label"><span>      </span> Co applicant income receipt
+                        </span>
+                        <input class="choose" type="file" id="myfile" name="co-income">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Loan amount ( Thousand $ )</span>
                         <input
                           type="text"
                           placeholder="Enter your loan amount"
@@ -170,6 +196,13 @@
                           required
                         />
                         <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label"><span>      </span> Loan Amount
+                        </span>
+                        <input class="choose" type="file" id="myfile" name="loan">
                       </div>
                     </div>
                     <div class="col-md-3">
@@ -183,6 +216,13 @@
                           class="form-control"
                         />
                         <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label"><span>      </span> term of borrowing week
+                        </span>
+                        <input class="choose" type="file" id="myfile" name="week">
                       </div>
                     </div>
                    <div class="col-md-3">
@@ -199,7 +239,7 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-btn">
-                        <button class="submit-btn">LOAN APPROVAL?</button>
+                        <button class="submit-btn">Eligible for Loan</button>
                       </div>
                     </div>
                   </div>
