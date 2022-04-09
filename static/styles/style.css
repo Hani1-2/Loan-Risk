@@ -20,7 +20,7 @@
 }
 
 .booking-form {
-  background: rgba(32, 27, 27, 0.7);
+  background: rgba(38, 33, 33, 0.7);
   padding: 40px;
   border-radius: 6px;
 }
@@ -156,7 +156,7 @@
 
 .booking-form .submit-btn {
   color: #fff;
-  background-color: #397e8a;
+  background-color:#2b7a55;
   font-weight: 400;
   height: 50px;
   font-size: 14px;
