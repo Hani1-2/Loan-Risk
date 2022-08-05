@@ -31,7 +31,7 @@ model = pickle.load(open('approved_or_not.pkl', 'rb'))
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api')
 def index():
     return render_template('index.html')
 
