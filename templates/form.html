@@ -92,33 +92,46 @@
                 <div class="row">
                   <div class="col-md-3">
                     <div class="form-group">
-                      <span class="form-label">GENDER</span>
+                      <span class="form-label">GRADE</span>
                       <select class="form-control" name="a">
                         Select any option
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
                       </select>
                       <span class="select-arrow"></span>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="form-group">
-                      <span class="form-label">Are you married?</span>
+                      <span class="form-label">HOUSE OWNERSHIP</span>
                       <select class="form-control" name="b">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                        <option value="own">OWN</option>
+                        <option value="mortgage">MORTGAGE</option>
                       </select>
                       <span class="select-arrow"></span>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="form-group">
-                      <span class="form-label">Number of Dependents</span>
+                      <span class="form-label">ADDRESS STATE</span>
                       <select class="form-control" name="c">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3+</option>
+                        <option value="nm">NM, VA</option>
+                        <option value="ny">NY</option>
+                        <option value="ok">OK,TN,MO,LA,MD,NC</option>
+                        <option value="ca">CA</option>
+                        <option value="ut">UT, KY, AZ, NJ</option>
+                        <option value="ar">AR, MI, PA, OH, MN</option>
+                        <option value="ri">RI, MA, DE, SD, IN</option>
+                        <option value="ga">GA, WA, OR</option>
+                        <option value="wi">WI, MT</option>
+                        <option value="tx">TX</option>
+                        <option value="il">IL, CT</option>
+                        <option value="ks">KS, SC, CO, VT, AK, MS</option>
+                        <option value="wv">WV, NH, WY, DC, ME, ID</option>
                       </select>
                       <span class="select-arrow"></span>
                     </div>
@@ -127,111 +140,263 @@
                 <div class="row">
                   <div class="col-md-3">
                     <div class="form-group">
-                      <span class="form-label">Education</span>
+                      <span class="form-label">VERIFICATION</span>
                       <select class="form-control" name="d">
-                        <option value="Graduate">Graduate</option>
-                        <option value="Non Graduate">Not Graduate</option>
+                        <option value="nv">NOT VERIFIED</option>
+                        <option value="sv">SOURCE VERIFIED</option>
                       </select>
                       <span class="select-arrow"></span>
                     </div>
                   </div>
                   <div class="col-md-3">
                     <div class="form-group">
-                      <span class="form-label">Are you Self-Employed?</span>
+                      <span class="form-label">PURPOSE:</span>
                       <select class="form-control" name="e">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                        <option value="cc">credit card</option>
+                        <option value="dc">debt_consolidation</option>
+                        <option value="omv">oth__med__vacation</option>
+                        <option value="mpc">major_purch__car__home_impr</option>
                       </select>
                       <span class="select-arrow"></span>
                     </div>
                   </div>
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <span class="form-label">Income ( $ )</span>
-                        <input
-                          type="text"
-                          placeholder="your income in digits"
-                          name="f"
-                          class="form-control"
-                          required
-                        />
-                        <span class="select-arrow"></span>
-                      </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <span class="form-label">INITIAL LIST STATUS</span>
+                      <select class="form-control" name ="f">Select any option
+                        <option value="w">W
+                        </option> 
+                      </select>
+                      <span class="select-arrow"></span>
                     </div>
-                    <div class="col-md-3">
+                  </div>
+                    <!-- <div class="col-md-3">
                       <div class="form-group">
                         <span class="form-label"><span>      </span> income receipt
                         </span>
                         <input class="choose" type="file" id="myfile" name="income">
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Co applicant income ( $ )</span>
-                        <input
-                          type="text"
-                          placeholder="Enter your co-applicant income"
-                          name="g"
-                          required
-                          class="form-control"
-                        />
+                        <span class="form-label">TERM:</span>
+                        <select class="form-control" name ="g">Select any option
+                          <option value="36">36
+                          </option>
+                        </select>
                         <span class="select-arrow"></span>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                       <div class="form-group">
                         <span class="form-label"><span>      </span> Co applicant income receipt
                         </span>
                         <input class="choose" type="file" id="myfile" name="co-income">
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Loan amount ( Thousand $ )</span>
-                        <input
-                          type="text"
-                          placeholder="Enter your loan amount"
-                          name="h"
-                          class="form-control"
-                          required
-                        />
+                        <span class="form-label">EMPLOYEE LENGTH</span>
+                        <select class="form-control" name ="h">Select any option
+                          <option value="1">1
+                          </option> 
+                          <option value="2">2-4
+                          </option>
+                          <option value="5">5-6
+                          </option> 
+                          <option value="7">7-9
+                          </option>
+                          <option value="10">10
+                          </option> 
+                        </select>
                         <span class="select-arrow"></span>
                       </div>
                     </div>
                     <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">MTHS SINCE ISSUE D</span>
+                        <select class="form-control" name ="i">Select any option
+                          <option value="38">LESS THAN 38
+                          </option>
+                          <option value="39">38-39
+                          </option> 
+                          <option value="40">40-41
+                          </option>
+                          <option value="42">42-48
+                          </option> 
+                          <option value="49">49-52
+                          </option>
+                          <option value="53">53-64
+                          </option> 
+                          <option value="65">65-84
+                          </option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">INITIAL RATE</span>
+                        <select class="form-control" name ="j">Select any option
+                          <option value="1">LESS THAN 9.548
+                          </option>
+                          <option value="2">9.548 - 12.025
+                          </option> 
+                          <option value="3">12.025 - 15.74
+                          </option>
+                          <option value="5">GREATER THAN 20.281
+                          </option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-3">
                       <div class="form-group">
                         <span class="form-label"><span>      </span> Loan Amount
                         </span>
                         <input class="choose" type="file" id="myfile" name="loan">
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Term for borrowing money (weeks)</span>
-                        <input
-                          type="text"
-                          placeholder="Enter your loan amount term"
-                          name="i"
-                          required
-                          class="form-control"
-                        />
+                        <span class="form-label">MTHS SINCE EARLIEST CR LINE</span>
+                        <select class="form-control" name ="k">Select any option
+                          <option value="1">141 - 164
+                          </option> 
+                          <option value="2">165 - 247
+                          </option>
+                          <option value="3">248 - 270
+                          </option> 
+                          <option value="4">271 - 352
+                          </option>
+                          <option value="5">GREATER THAN 352
+                          </option> 
+                        </select>
                         <span class="select-arrow"></span>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                       <div class="form-group">
                         <span class="form-label"><span>      </span> term of borrowing week
                         </span>
                         <input class="choose" type="file" id="myfile" name="week">
                       </div>
+                    </div> -->
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">INQ LASt 6 MTHS</span>
+                        <select class="form-control" name ="l">Select any option
+                          <option value="0">0
+                          </option>
+                          <option value="1">1-2
+                          </option> 
+                          <option value="2">3-6
+                          </option> 
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
                     </div>
                    <div class="col-md-3">
                       <div class="form-group">
-                        <span class="form-label">Applicants credit history</span>
-                        <select class="form-control" name ="j">Select any option
-                          <option value="1">Clear
+                        <span class="form-label">ACC NOW DELINQ</span>
+                        <select class="form-control" name ="m">Select any option
+                          <option value="1">GREATER THAN 1
+                          </option> 
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">ANNUAL INC</span>
+                        <select class="form-control" name ="n">Select any option
+                          <option value="1">20K - 30K
+                          </option> 
+                          <option value="2">30K - 40K
                           </option>
-                          <option value="2">Not Clear
+                          <option value="3">40K - 50K
+                          </option> 
+                          <option value="4">50K - 60K
+                          </option>
+                          <option value="5">60K - 70K
+                          </option> 
+                          <option value="6">70K - 80K
+                          </option>
+                          <option value="7">80K - 90K
+                          </option>
+                          <option value="8">90K - 100K
+                          </option>
+                          <option value="9">100K - 120K
+                          </option>
+                          <option value="10">120K - 140K
+                          </option>
+                          <option value="11">GREATER THAN 140K
+                          </option> 
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">DTI</span>
+                        <select class="form-control" name ="o">Select any option
+                          <option value="0">LESS THAN EQUAL TO 1.4
+                          </option>
+                          <option value="1">1.4 - 3.5
+                          </option> 
+                          <option value="2">3.5 - 7.7
+                          </option>
+                          <option value="3">7.7 - 10.5
+                          </option> 
+                          <option value="4">10.5 - 16.1
+                          </option>
+                          <option value="5">16.1 - 20.3
+                          </option> 
+                          <option value="6">20.3 - 21.7
+                          </option>
+                          <option value="7">21.7 - 22.4
+                          </option>
+                          <option value="8">22.4 - 35
+                          </option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">MTHS SINCE LAST DELINQ:</span>
+                        <select class="form-control" name ="p">Select any option
+                          <option value="0">MISSING
+                          </option>
+                          <option value="1">0 - 3
+                          </option> 
+                          <option value="2">4 - 30
+                          </option>
+                          <option value="3">31 - 56
+                          </option> 
+                          <option value="4">GREATER THAN EQUAL TO 57
+                          </option>
+                        </select>
+                        <span class="select-arrow"></span>
+                      </div>
+                    </div>
+                   <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">MTHS SINCE LAST RECORD: </span>
+                        <select class="form-control" name ="q">Select any option
+                          <option value="0">MISSING
+                          </option>
+                          <option value="1">0 - 2
+                          </option> 
+                          <option value="2">3 - 20
+                          </option> 
+                          <option value="3">21 - 31
+                          </option> 
+                          <option value="4">32 - 80
+                          </option> 
+                          <option value="5">81 - 86
+                          </option> 
+                          <option value="6">GREATER THAN 86
                           </option> 
                         </select>
                         <span class="select-arrow"></span>
